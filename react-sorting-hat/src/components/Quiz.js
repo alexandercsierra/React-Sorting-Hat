@@ -1,15 +1,27 @@
 import React from 'react'
 import Question from './Question'
 import questionSet from '../data/questionSet'
+import {useHistory} from 'react-router-dom'
 
-const Quiz = () => {
-    console.log(questionSet);
-    return (<div>
-        I am the quiz
-        {questionSet.map(question => {
-            return <Question id={question.id} name={question.q} answer={question.a}/>
-        })}
-    </div>)
+
+const Quiz = (props) => {
+    const history = useHistory();
+    // const wait = 
+    return (
+        <div>
+            I am the quiz
+            {questionSet.map(question => {
+                return <Question q={question.q} answers={question.a} addPoints={props.addPoints}/>
+            })}
+            <div>
+                <button onClick={e=>{
+                    props.getResult(e);
+                    // setTimeout(()=>{return history.push("/results")}, 1000)
+                    history.push("/results");
+                    }}>Calculate Result</button>
+            </div>
+        </div>
+    )
 }
 
 export default Quiz
