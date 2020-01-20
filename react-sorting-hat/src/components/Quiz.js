@@ -15,9 +15,11 @@ const Quiz = (props) => {
             })}
             <div>
                 <button onClick={e=>{
-                    props.getResult(e);
-                    // setTimeout(()=>{return history.push("/results")}, 1000)
+                    const winners = props.getResult(e);
                     history.push("/results");
+                    
+                       
+                    
                     }}>Calculate Result</button>
             </div>
         </div>

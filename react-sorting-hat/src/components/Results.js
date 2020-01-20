@@ -1,16 +1,13 @@
 import React from 'react'
+import SingleResult from './results/SingleResult'
+import MultiResults from './results/MultiResults'
 
 const Results = (props) => {
     console.log(props.winners);
     return(
         <div>
-            {
-            
-            props.winners ? props.winners.map(winner => {
-                return <h1>{winner}</h1>
-            }) : "loading"
-        
-        }
+        {props.winners.length === 1 && <SingleResult winner={props.winners[0]}/>}
+        {props.winners.length > 1 && <MultiResults setWinner={props.setWinner} winners={props.winners}/>}
         </div>
     )
 }

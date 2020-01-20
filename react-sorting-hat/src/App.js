@@ -80,9 +80,25 @@ class App extends Component {
     console.log("finalHouses", finalHouses);
     this.setState({winners: finalHouses});
 
-
+    return this.state.winners;
   }
   
+  setWinner = (e) => {
+    let winner = e.target.textContent
+    let newState = [];
+    if (winner === "Ravenclaw"){
+      newState.push("Ravenclaw");
+    } else if (winner === "Slytherin"){
+      newState.push("Slytherin");
+    }else if (winner === "Hufflepuff"){
+      newState.push("Hufflepuff");
+    } else if (winner === "Gryffindor"){
+      newState.push("Gryffindor");
+    }
+
+    this.setState({winners: newState});
+    
+  }
 
   render() {
     console.log("state", this.state);
@@ -91,7 +107,7 @@ class App extends Component {
       <div className="App">
         <Route exact path="/"><Home/></Route>
         <Route path="/quiz"><Quiz scores={this.state} addPoints={this.addPoints} getResult={this.getResult}/></Route>
-        <Route path="/results"><Results winners={this.state.winners}/></Route>
+        <Route path="/results"><Results winners={this.state.winners} setWinner={this.setWinner}/></Route>
         
       </div>
     );
