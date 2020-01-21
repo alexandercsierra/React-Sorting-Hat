@@ -12,14 +12,14 @@ const Div = styled.div`
     background-size: cover;
     // background-position: 50% 50%;
     // margin-top: 8%;
-    border: 1px solid green;
-    height: 300vh;
+    // border: 1px solid green;
+    height: 350vh;
 `;
 
 const Container = styled.div`
     background: rgba(0,0,0,.8);
     padding-top: 10%;
-    height: 300vh;
+    height: 350vh;
 `;
 
 const Quiz = (props) => {
@@ -32,7 +32,7 @@ const Quiz = (props) => {
                 return <Question q={question.q} answers={question.a} addPoints={props.addPoints}/>
             })}
             <div>
-                <button onClick={e=>{
+                <button style={{marginTop: "7%", border: "1px solid white"}} onClick={e=>{
                     const winners = props.getResult(e);
                     history.push("/results");
                     

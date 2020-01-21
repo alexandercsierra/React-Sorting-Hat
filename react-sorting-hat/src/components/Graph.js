@@ -3,8 +3,31 @@ import ReactDOM from "react-dom";
 import Chart from "react-google-charts";
 
 
+
+
 const Graph = (props) => {
-    const {scores} = props;
+    const {scores, winner} = props;
+    const win = winner.toLowerCase();
+    var options = {
+      title: 'title',
+      width: '50%',
+      margin: '0 auto',
+      // height: 260,
+      backgroundColor: '#000',
+      is3D: true
+    };
+
+    if (win === "gryffindor"){
+      options.backgroundColor = "red";
+    } else if (win === "slytherin"){
+      options.backgroundColor = "green";
+    } else if (win === "ravenclaw"){
+      options.backgroundColor = "blue";
+    } else if (win === "hufflepuff"){
+      options.backgroundColor = "yellow";
+    }
+
+
     const data = [
         ["Year", "House Points", { role: "style" }],
         ["Gryffindor", scores.g, "color: #ed1e14"],
@@ -15,7 +38,7 @@ const Graph = (props) => {
       
     return (
       <div className="App">
-        <Chart chartType="BarChart" width="100%" height="400px" data={data} />
+        <Chart chartType="BarChart" width="100%" height="400px" data={data} options={options} />
       </div>
     );
 }

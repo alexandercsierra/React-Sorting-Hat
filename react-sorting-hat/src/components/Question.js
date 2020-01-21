@@ -45,7 +45,7 @@ const Question = (props) => {
                 }
             })} */}
             {randomVals.map((ans, i) => {
-                    return <button style={{background: "#000", border: "1px solid white"}} id={vals.indexOf(ans)} disabled={isDisabled} onClick={e => {
+                    return <button id={vals.indexOf(ans)} disabled={isDisabled} onClick={e => {
                         props.addPoints(e);
                         setIsDisabled(true);
                         setClasses("hide");
