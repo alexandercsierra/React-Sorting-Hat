@@ -100,6 +100,16 @@ class App extends Component {
     
   }
 
+  resetScores = (e) => {
+    this.setState({
+        g: 0,
+        s: 0,
+        r: 0,
+        h: 0,
+        winners: []
+      });
+  }
+
   render() {
     console.log("state", this.state);
     console.log("winners", this.state.winners);
@@ -107,7 +117,7 @@ class App extends Component {
       <div className="App">
         <Route exact path="/"><Home/></Route>
         <Route path="/quiz"><Quiz scores={this.state} addPoints={this.addPoints} getResult={this.getResult}/></Route>
-        <Route path="/results"><Results winners={this.state.winners} setWinner={this.setWinner}/></Route>
+        <Route path="/results"><Results houseScores={this.state} winners={this.state.winners} setWinner={this.setWinner} reset={this.resetScores}/></Route>
         
       </div>
     );

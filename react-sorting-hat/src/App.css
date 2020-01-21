@@ -32,3 +32,23 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 1%;
+  background: #151A37;
+  color: white;
+}
+
+button:disabled {
+  background: white;
+  border: 1px solid #151A37;
+  color: #151A37;
+  display:none;
+}
+
+.hide {
+  display:none;
+}
