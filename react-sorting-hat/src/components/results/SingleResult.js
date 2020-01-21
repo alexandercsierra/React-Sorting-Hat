@@ -24,13 +24,13 @@ const SingleResult = (props) => {
             setTheme({
                 background: 'linear-gradient(180deg, rgba(4,53,122,1) 0%, rgba(11,149,204,1) 100%)',
                 // color: '#C1C1C1'
-                color: '#946B4C'
+                color: '#d59b70'
             })
         } else if (props.winner.toLowerCase()=== "hufflepuff"){
             setTheme({
                 background: 'linear-gradient(180deg, rgba(186,140,11,1) 0%, rgba(246,187,20,1) 100%)',
-
-                color: '#3F3F3F'
+                fontSize: "2rem",
+                color: 'white'
             })
         }
     }, [])
