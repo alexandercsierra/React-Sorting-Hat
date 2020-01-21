@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Sorting-Hat/static/css/main.b1360536.chunk.css",
+    "main.js": "/React-Sorting-Hat/static/js/main.9b7fef9b.chunk.js",
+    "main.js.map": "/React-Sorting-Hat/static/js/main.9b7fef9b.chunk.js.map",
+    "runtime-main.js": "/React-Sorting-Hat/static/js/runtime-main.b47cc032.js",
+    "runtime-main.js.map": "/React-Sorting-Hat/static/js/runtime-main.b47cc032.js.map",
+    "static/js/2.6b55f581.chunk.js": "/React-Sorting-Hat/static/js/2.6b55f581.chunk.js",
+    "static/js/2.6b55f581.chunk.js.map": "/React-Sorting-Hat/static/js/2.6b55f581.chunk.js.map",
+    "index.html": "/React-Sorting-Hat/index.html",
+    "precache-manifest.aa40f83f984d6185c70f6be6e26ceebb.js": "/React-Sorting-Hat/precache-manifest.aa40f83f984d6185c70f6be6e26ceebb.js",
+    "service-worker.js": "/React-Sorting-Hat/service-worker.js",
+    "static/css/main.b1360536.chunk.css.map": "/React-Sorting-Hat/static/css/main.b1360536.chunk.css.map",
+    "static/media/croppedbackground.jpg": "/React-Sorting-Hat/static/media/croppedbackground.978cbf73.jpg",
+    "static/media/gryff.png": "/React-Sorting-Hat/static/media/gryff.949bcc9d.png",
+    "static/media/index.css": "/React-Sorting-Hat/static/media/harryp__-webfont.dde87578.woff",
+    "static/media/huff.png": "/React-Sorting-Hat/static/media/huff.093955fb.png",
+    "static/media/raven.png": "/React-Sorting-Hat/static/media/raven.3bc43089.png",
+    "static/media/slyth.png": "/React-Sorting-Hat/static/media/slyth.db11dc31.png",
+    "static/media/sortinghat.jpg": "/React-Sorting-Hat/static/media/sortinghat.9d9af0f0.jpg"
+  }
+}
