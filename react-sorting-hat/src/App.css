@@ -34,12 +34,15 @@
 }
 
 button {
+  font-family: 'Sriracha', cursive;
+  font-size: 1rem;
   border: none;
   border-radius: 5px;
-  padding: 1%;
+  padding: 2%;
   margin: 1%;
-  background: #151A37;
-  color: white;
+  background: #000;
+  color: #d6d6cb;
+  width: 20%;
 }
 
 button:disabled {

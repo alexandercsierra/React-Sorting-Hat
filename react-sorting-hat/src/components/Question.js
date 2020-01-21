@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 
 const Div = styled.div`
-    border: 1px solid red;
-    width: 50%;
-    margin: 4% auto;
+    // border: 1px solid red;
+    width: 80%;
+    margin: 0 auto;
 `;
 
 const Question = (props) => {
@@ -37,7 +37,7 @@ const Question = (props) => {
 
 
     return (<Div className={classes}>
-        <h4>{props.q}</h4>
+        <h4 style={{fontSize: "2.5rem", color:"#967e4e", marginTop: "4%", textShadow: "3px 3px #000"}}>{props.q}</h4>
         <div>
             {/* {vals.map((ans, i) => {
                 if (vals[i-1] !== undefined && vals[i-1] !== ans){
@@ -45,7 +45,7 @@ const Question = (props) => {
                 }
             })} */}
             {randomVals.map((ans, i) => {
-                    return <button id={vals.indexOf(ans)} disabled={isDisabled} onClick={e => {
+                    return <button style={{background: "#000", border: "1px solid white"}} id={vals.indexOf(ans)} disabled={isDisabled} onClick={e => {
                         props.addPoints(e);
                         setIsDisabled(true);
                         setClasses("hide");
