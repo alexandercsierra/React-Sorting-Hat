@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe212472b2e23224f580135101bcd256",
+    "revision": "23bc2bb2c81d7c7dfe9bf00facf2f68f",
     "url": "/React-Sorting-Hat/index.html"
   },
   {
-    "revision": "011f9516da15711c6a71",
+    "revision": "388ed9acaf5ef68e34ae",
     "url": "/React-Sorting-Hat/static/css/main.b1360536.chunk.css"
   },
   {
-    "revision": "3772fc5bb91c58476f96",
-    "url": "/React-Sorting-Hat/static/js/2.6b55f581.chunk.js"
+    "revision": "96b8f0b39fd07bb5e2da",
+    "url": "/React-Sorting-Hat/static/js/2.9900f318.chunk.js"
   },
   {
-    "revision": "011f9516da15711c6a71",
-    "url": "/React-Sorting-Hat/static/js/main.9b7fef9b.chunk.js"
+    "revision": "388ed9acaf5ef68e34ae",
+    "url": "/React-Sorting-Hat/static/js/main.57acb9e3.chunk.js"
   },
   {
     "revision": "9866d44e97a368409119",
